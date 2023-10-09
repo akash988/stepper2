@@ -1,68 +1,956 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
-.center{
+* {
+
+    font-family: 'Montserrat', sans-serif;
+
+}
+.invalid-feedback{
+    font-size:small
+}
+
+/* Header CSS */
+
+.h-row {
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+    width: 80%;
+
+}
+
+.img-fluid {
+
+    height: 51px;
+
+    max-width: 50%;
+
+    max-height: 70%;
+
+}
+
+.tfgbtn {
+
+    background-color: rgb(94, 23, 94);
+
+    color: white;
+
+    max-width: 60%;
+
+    max-height: 68%;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 15px;
+
+    border-radius: 6px;
+
+    padding: 6px;
+
+    margin-left: 20px;
+
+    height: 40px
+}
+
+.backbtn {
+
     text-align: center;
-    size:20px;
+
+    color: darkgrey;
+
+    margin-top: 10px;
+
+    font-size: 68%;
+
+    text-size-adjust: auto;
+
 }
-.row1{
-    margin-bottom: 20px;
-}
-.pcontainer{
-    
-    margin-top: 70px;
-    margin-bottom: 30px;
+/* Progress Bar CSS*/
+
+.pcontainer {
+
     text-align: center;
-    justify-content: center;
+
+    width: 50%;
+
+    margin: auto;
+
 }
+
+.srow1 {
+
+    margin-top: 13px;
+
+    margin-bottom: 12px;
+
+}
+
+.smallStepper {
+
+    font-size: 0px;
+
+}
+
+.stepperHR {
+
+    opacity: 0;
+
+}
+
+.labels {
+
+    font-size: small;
+
+    color: darkslategray;
+
+}
+
 .step {
-display:inline;
-margin:30px;
-text-align: center;
-padding: 10px;
-background-color: #f0f0f0;
-border-radius: 5px;
-border:black;
+
+    display: inline;
+
+    text-align: center;
+
+    padding: 10px;
+
+    background-color: #f0f0f0;
+
+    border-radius: 5px;
+
+    border: black;
+
 }
 
 .active {
-    background-color:  rgb(94, 23, 94);
-    color: white;
-}
-.step-number.completed{
-    background-color:  rgb(94, 23, 94);
-    color: white;
-  }
 
-.labels{
-    font-size: small;
-    
+    background-color: rgb(94, 23, 94);
+
+    color: white;
+
 }
-.form-select{
-    justify-content: center;
-   
-   
+
+.completed {
+
+    background-color: rgb(94, 23, 94);
+
+     color: white;
+
 }
-.form-group{
-    justify-content: center;
-    
-}
-.card{
-    align-items:center;
-    width:900px;
-}
-/* footer class */
-.topic{
-    font-size: 15px;
-    font-weight: 600;
-  }
-  .size{
+/* main content css */
+.form-select,
+.form-control {
+
     font-size: 12px;
-  }
-  .emptxt{
-font-weight: 400;
-color: grey;
-font-size: 11px;
+
+    color: darkslategray;
+
 }
-.row{
-    text-align: center; margin-top: 15vh;
+
+.content {
+
+    width: 70%;
+
+    display: inline-block;
+
 }
+
+.containerMain {
+
+    text-align: center;
+
+    width: 50%;
+
+    margin: auto;
+
+}
+
+.topic {
+
+    font-size: 22px;
+
+    margin-top: 11px;
+
+}
+
+.emptxt {
+
+    font-weight: lighter;
+
+    color: grey;
+
+    font-size: 12px;
+
+}
+
+.terms {
+
+    width: 80%;
+
+    display: inline-block;
+
+    text-align: initial;
+
+}
+
+.nextBtn {
+
+    background: mediumseagreen;
+
+    border: blue;
+
+    margin-top: 15px;
+
+    color:white;
+
+    margin-left: 0%;
+
+    padding: 4px;
+
+    font-size: 15px;
+
+    height: 34px;
+
+    width: 63px;
+
+}
+/* Footer CSS */
+.topicF {
+
+    font-size: 15px;
+
+    color: darkslategray;
+
+}
+.sizeF {
+
+    font-size: 11px;
+
+    margin-top: 3px;
+
+    color: dimgrey;
+
+}
+
+.emptxtF {
+
+    font-weight: 400;
+
+    color: grey;
+
+    font-size: 11px;
+
+    margin-top: 7px;
+
+}
+.page2 {
+
+    font-size: 10px;
+
+}
+/* media queries */
+@media screen and (max-width: 1348px) {
+
+    .tfgbtn {
+
+        max-height: 39%;
+
+    }
+
+    .img-fluid {
+
+        margin-left: 18%;
+
+    }
+
+    .backbtn {
+
+        margin-top: 30px;
+
+        font-size: 68%;
+
+    }
+
+    .pcontainer {
+
+        width: 64%;
+
+    }
+
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1000px) {
+
+    .img-fluid {
+
+        margin-left: 15%;
+
+    }
+
+    .topic {
+
+        font-size: 20px;
+
+    }
+
+    .topicF {
+
+        font-size: 14px;
+
+    }
+
+    .sizeF,
+    .emptxtF {
+
+        font-size: 9px;
+
+    }
+
+}
+
+@media screen and (max-width: 1000px) and (min-width: 500px) {
+
+    .topic {
+
+        font-size: 18px;
+
+        width: 123%;
+
+        margin-left: -11%;
+
+    }
+
+    .topicF {
+
+        font-size: 12px;
+
+    }
+
+    .sizeF,
+    .emptxtF {
+
+        font-size: 8px;
+
+    }
+
+    .emptxt {
+
+        font-size: 9px;
+
+    }
+
+    .page2 {
+
+        font-size: 10px;
+
+    }
+
+    .form-select,
+    .form-control {
+
+        font-size: 11px;
+
+    }
+
+    .content {
+
+        margin-left: -6px;
+
+        width: 109%;
+
+    }
+
+    .terms {
+
+        width: 124%;
+
+        text-align: justify;
+
+        margin-left: -35px;
+
+    }
+
+    .img-fluid {
+
+        margin-left: 12%;
+
+    }
+
+    .pcontainer {
+
+        width: 91%;
+
+    }
+
+    .labels {
+
+        font-size: 11px;
+
+    }
+}
+
+@media screen and (max-width: 500px) and (min-width: 442px) {
+
+    .topic {
+
+        font-size: 17px;
+
+        width: 123%;
+
+        margin-left: -11%;
+
+    }
+
+    .topicF {
+
+        font-size: 11px;
+
+    }
+
+    .sizeF,
+    .emptxtF {
+
+        font-size: 8px;
+
+    }
+
+    .backbtn {
+
+        margin-top: 30px;
+
+        font-size: 61%;
+
+    }
+
+    .emptxt {
+
+        font-size: 9px;
+
+    }
+
+    .form-select,
+    .form-control {
+
+        font-size: 10px;
+
+    }
+
+    .labels {
+
+        font-size: 9px;
+
+    }
+
+    .pcontainer {
+
+        width: 91%;
+
+    }
+
+    .content {
+
+        width: 168%;
+
+        display: inline-block;
+
+        margin-left: -31%;
+
+    }
+
+    .terms {
+
+        width: 172%;
+
+        display: inline-block;
+
+        text-align: initial;
+
+        margin-left: -71px;
+
+    }
+
+    .nextBtn {
+
+        height: 31px;
+
+        width: 56px;
+
+        font-size: 14px;
+
+    }
+
+}
+
+@media screen and (max-width: 441px) {
+
+    .nextBtn {
+
+        font-size: 13px;
+
+        width: 49px;
+
+        height: 27px;
+
+    }
+
+    .topic {
+
+        font-size: 15px;
+
+        width: 123%;
+
+        margin-left: -11%;
+
+    }
+
+    .topicF {
+
+        font-size: 9px;
+
+    }
+
+    .sizeF,
+    .emptxtF {
+
+        font-size: 7px;
+
+    }
+
+    .backbtn {
+
+        font-size: 57%;
+
+    }
+
+    .emptxt {
+
+        font-size: 8px;
+
+    }
+
+    .form-select,
+    .form-control {
+
+        font-size: 9px;
+
+    }
+
+    .terms {
+
+        width: 173%;
+
+        display: inline-block;
+
+        text-align: initial;
+
+        margin-left: -32%;
+
+    }
+
+    .content {
+
+        width: 168%;
+
+        display: inline-block;
+
+        margin-left: -31%;
+
+    }
+
+    .labels {
+
+        font-size: 0px;
+
+    }
+
+    .pcontainer {
+
+        width: 82%;
+
+    }
+
+    .smallStepper {
+
+        color: dimgrey;
+
+        align-items: center;
+
+        text-align: center;
+
+        font-size: 14px;
+
+        color: dimgray;
+
+        margin-top: 27px;
+
+    }
+
+    .stepperHR {
+
+        color: inherit;
+
+        margin: auto;
+
+        border: 0;
+
+        border-top: var(--bs-border-width) solid;
+
+        opacity: .25;
+
+        width: 45%;
+
+    }
+
+}
+
+/* @media screen and (max-width: 1348px) {
+
+    .tfgbtn {
+
+        max-height: 39%;
+
+    }
+
+    .img-fluid {
+
+        margin-left: 18%;
+
+    }
+
+    .backbtn {
+
+        margin-top: 30px;
+
+        font-size: 68%;
+
+    }
+
+    .pcontainer {
+
+        width: 64%;
+
+    }
+
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1000px) {
+
+    .img-fluid {
+
+        margin-left: 15%;
+
+    }
+
+    .topic {
+
+        font-size: 20px;
+
+    }
+
+    .topicF {
+
+        font-size: 14px;
+
+    }
+
+    .sizeF,
+    .emptxtF {
+
+        font-size: 9px;
+
+    }
+
+}
+
+@media screen and (max-width: 1000px) and (min-width: 500px) {
+
+    .topic {
+
+        font-size: 18px;
+
+        width: 123%;
+
+        margin-left: -11%;
+
+    }
+
+    .topicF {
+
+        font-size: 12px;
+
+    }
+
+    .sizeF,
+    .emptxtF {
+
+        font-size: 8px;
+
+    }
+
+    .emptxt {
+
+        font-size: 9px;
+
+    }
+
+    .form-select,
+    .form-control {
+
+        font-size: 11px;
+
+    }
+
+    .content {
+
+        margin-left: -6px;
+
+        width: 109%;
+
+    }
+
+    .terms {
+
+        width: 124%;
+
+        text-align: justify;
+
+        margin-left: -35px;
+
+    }
+
+    .img-fluid {
+
+        margin-left: 12%;
+
+    }
+
+    .pcontainer {
+
+        width: 91%;
+
+    }
+
+    .labels {
+
+        font-size: 11px;
+
+    }
+}
+
+@media screen and (max-width: 500px) and (min-width: 442px) {
+
+    .topic {
+
+        font-size: 17px;
+
+        width: 123%;
+
+        margin-left: -11%;
+
+    }
+
+    .topicF {
+
+        font-size: 11px;
+
+    }
+
+    .sizeF,
+    .emptxtF {
+
+        font-size: 8px;
+
+    }
+
+    .backbtn {
+
+        margin-top: 30px;
+
+        font-size: 61%;
+
+    }
+
+    .emptxt {
+
+        font-size: 9px;
+
+    }
+
+    .form-select,
+    .form-control {
+
+        font-size: 10px;
+
+    }
+
+    .labels {
+
+        font-size: 9px;
+
+    }
+
+    .pcontainer {
+
+        width: 91%;
+
+    }
+
+    .content {
+
+        width: 168%;
+
+        display: inline-block;
+
+        margin-left: -31%;
+
+    }
+
+    .terms {
+
+        width: 172%;
+
+        display: inline-block;
+
+        text-align: initial;
+
+        margin-left: -71px;
+
+    }
+
+    .nextBtn {
+
+        height: 31px;
+
+        width: 56px;
+
+        font-size: 14px;
+
+    }
+
+}
+
+@media screen and (max-width: 441px) {
+
+    .nextBtn {
+
+        font-size: 13px;
+
+        width: 49px;
+
+        height: 27px;
+
+    }
+
+    .topic {
+
+        font-size: 15px;
+
+        width: 123%;
+
+        margin-left: -11%;
+
+    }
+
+    .topicF {
+
+        font-size: 9px;
+
+    }
+
+    .sizeF,
+    .emptxtF {
+
+        font-size: 7px;
+
+    }
+
+    .backbtn {
+
+        font-size: 57%;
+
+    }
+
+    .emptxt {
+
+        font-size: 8px;
+
+    }
+
+    .form-select,
+    .form-control {
+
+        font-size: 9px;
+
+    }
+
+    .terms {
+
+        width: 173%;
+
+        display: inline-block;
+
+        text-align: initial;
+
+        margin-left: -32%;
+
+    }
+
+    .content {
+
+        width: 168%;
+
+        display: inline-block;
+
+        margin-left: -31%;
+
+    }
+
+    .labels {
+
+        font-size: 0px;
+
+    }
+
+    .pcontainer {
+
+        width: 82%;
+
+    }
+
+    .smallStepper {
+
+        color: dimgrey;
+
+        align-items: center;
+
+        text-align: center;
+
+        font-size: 14px;
+
+        color: dimgray;
+
+        margin-top: 27px;
+
+    }
+
+    .stepperHR {
+
+        color: inherit;
+
+        margin: auto;
+
+        border: 0;
+
+        border-top: var(--bs-border-width) solid;
+
+        opacity: .25;
+
+        width: 45%;
+
+    }
+
+} */
+
+
+

@@ -7,9 +7,9 @@ function ProgressBar({ currentStep }) {
       <div className="pcontainer">
       <div className='row1'>
        <div className='row row-cols-6'>
-       {steps.map((index) => (
+       {steps.map((step,index) => (
           <div className='col'>
-             <div key={index} className="labels">{data[index]}</div>
+             <div  className="labels">{data[index]}</div>
             </div>
         ))}
         </div>
@@ -18,7 +18,7 @@ function ProgressBar({ currentStep }) {
         <div className='row row-cols-6'>
        {steps.map((step, index) => (
           <div className='col'>
-              <div key={index.step} className={`step ${currentStep === index ? 'active' : ''}`}>
+              <div key={index} className={`step ${currentStep === index ? 'active' : ''}`}>
                 {step}
               </div>
             </div>

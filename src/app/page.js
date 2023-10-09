@@ -8,6 +8,7 @@ import Form5 from '../app/component/Form5';
 import Form6 from './component/Form6/page';
 import ProgressBar from '../app/component/ProgressBar';
 import Navigation from '../app/component/Navigation';
+import Footer from './component/Footer/page';
 
 export default function Home() {
 const [currentStep, setCurrentStep] = useState(0);
@@ -40,6 +41,7 @@ return (
 <ProgressBar currentStep={currentStep} />
 {renderForm()}
 <Navigation onNext={handleNext} onBack={handleBack} isFirstStep={currentStep === 0} isSecondStep={currentStep === 1} isThirdStep={currentStep === 2} isFourthStep={currentStep === 5} isFifthStep={currentStep === 4} isLastStep={currentStep === 5} />
+<Footer/>
 </div>
 );
 }
